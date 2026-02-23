@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0d59f2;
+  --color-primary-dark: #0a46c2;
+  --color-background-light: #f5f6f8;
+  --color-background-dark: #101622;
+  --color-surface-dark: #182234;
+  --color-surface-darker: #0b0f19;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .shadow-neon {
+    box-shadow: 0 0 20px rgba(13, 89, 242, 0.15);
+  }
+  .shadow-neon-strong {
+    box-shadow: 0 0 30px rgba(13, 89, 242, 0.4);
+  }
+}
+
+body {
+  overscroll-behavior-y: none;
+}
